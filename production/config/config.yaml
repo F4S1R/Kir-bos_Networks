@@ -1,0 +1,8 @@
+
+    network:
+      security: high
+      dmz: enabled
+      versions: desktop, mobile, tablet, cloud, flip_phone
+      ssl: enabled
+      intrusion_detection: enabled
+    

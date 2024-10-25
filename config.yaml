@@ -1,0 +1,4 @@
+network:
+  security: high
+  dmz: enabled
+  firewall: active
