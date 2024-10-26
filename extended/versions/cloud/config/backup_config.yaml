@@ -1,0 +1,5 @@
+backup:
+  enable_backup: true
+  frequency: "daily"  # Options : daily, weekly, monthly
+  backup_location: "cloud_backup_bucket"
+  retention_period: 30  # En jours

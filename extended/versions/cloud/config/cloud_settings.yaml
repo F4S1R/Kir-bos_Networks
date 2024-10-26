@@ -1,0 +1,10 @@
+# cloud_settings.yaml
+api_key: "YOUR_CLOUD_API_KEY"
+endpoint: "https://cloud.yourservice.com/api"
+database:
+  host: "cloud_db_host"
+  user: "cloud_user"
+  password: "cloud_password"
+logging:
+  level: "INFO"
+  file: "/var/log/kirebos_cloud.log"

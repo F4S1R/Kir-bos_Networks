@@ -1,0 +1,7 @@
+logging:
+  level: "INFO"  # Options : DEBUG, INFO, WARN, ERROR
+  file: "/var/log/kirebos_cloud.log"
+  rotate:
+    enabled: true
+    max_size: "10M"
+    max_files: 5

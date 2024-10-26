@@ -1,0 +1,4 @@
+connection:
+  timeout: 30  # Timeout en secondes
+  max_retries: 5
+  retry_delay: 10  # Délai entre les tentatives en secondes
