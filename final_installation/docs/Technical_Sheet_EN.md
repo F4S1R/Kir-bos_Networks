@@ -1,6 +1,4 @@
 
----
-
 #### 2. **Technical_Sheet_EN.md** (Technical Sheet)
 
 ```markdown
