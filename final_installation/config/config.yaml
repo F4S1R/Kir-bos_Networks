@@ -1,8 +1,13 @@
+application:
+  name: "Kirebos Networks"
+  version: "1.0.0"
+  environment: "production"
 
-    network:
-      security: high
-      dmz: enabled
-      versions: desktop, mobile, tablet, cloud, flip_phone
-      ssl: enabled
-      intrusion_detection: enabled
-    
+logging:
+  level: "info"
+  file: "logs/kirebos_networks.log"
+
+network:
+  defaultInterface: "auto"
+  firewallEnabled: true
+  maxLoginAttempts: 5

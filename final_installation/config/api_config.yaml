@@ -1,0 +1,5 @@
+api:
+  baseUrl: "https://api.kirebosnetworks.com/"
+  apiKey: "your_api_key_here"
+  timeout: 30  # secondes
+  rateLimit: 1000  # requêtes par heure
