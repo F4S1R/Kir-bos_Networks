@@ -1,6 +1,25 @@
+from controls import initialize_admin_interface, check_dmz_status, get_dmz_logs, restart_dmz
 
-    # Python script for admin connection to Raspberry Pi for DMZ management
-    print('Connecting to Raspberry Pi...')
-    # Code to handle the interface between the admin and Raspberry Pi for managing network configurations
-    # Add network and security management commands
-    
+class AdminInterface:
+    def __init__(self):
+        print("Admin Interface initialized.")
+
+    def start(self):
+        print("Starting admin interface...")
+        initialize_admin_interface()
+
+    def check_status(self):
+        check_dmz_status()
+
+    def view_logs(self):
+        get_dmz_logs()
+
+    def reboot(self):
+        restart_dmz()
+
+# Exemple d'utilisation
+if __name__ == "__main__":
+    interface = AdminInterface()
+    interface.start()
+    interface.check_status()
+    interface.view_logs()
