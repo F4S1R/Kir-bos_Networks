@@ -1,2 +1,8 @@
 #pragma once
-class TabletManager { public: void manage(); };
+
+class TabletManager {
+public:
+    void initialize();
+    void connect();
+    void disconnect();
+};

@@ -1,9 +1,10 @@
+#include "mobile_manager.h"
+#include <iostream>
 
-    #include <iostream>
-    #include "mobile_manager.h"
-    int main() {
-        MobileManager manager;
-        manager.manage();
-        std::cout << "Kirébos Networks Mobile Version - Fully Compiled and ready." << std::endl;
-        return 0;
-    }
+int main() {
+    MobileManager mobileManager;
+    mobileManager.initialize();
+    mobileManager.connect();
+    std::cout << "Kirebos Networks Mobile version is running." << std::endl;
+    return 0;
+}

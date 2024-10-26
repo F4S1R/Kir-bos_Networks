@@ -1,5 +1,14 @@
+#!/bin/bash
 
-    #!/bin/bash
-    echo 'Initializing DMZ on Raspberry Pi with compiled configurations'
-    # Full initialization script for DMZ on Raspberry Pi
-    
+echo "Starting DMZ initialization..."
+
+# Configuration par défaut pour la DMZ
+python3 dmz_config.py
+
+# Activer les paramètres de sécurité
+echo "Applying security settings..."
+ufw enable
+ufw default deny incoming
+ufw default allow outgoing
+
+echo "DMZ initialization complete."

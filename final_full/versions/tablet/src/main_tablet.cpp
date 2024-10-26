@@ -1,9 +1,10 @@
+#include "tablet_manager.h"
+#include <iostream>
 
-    #include <iostream>
-    #include "tablet_manager.h"
-    int main() {
-        TabletManager manager;
-        manager.manage();
-        std::cout << "Kirébos Networks Tablet Version - Fully Compiled and ready." << std::endl;
-        return 0;
-    }
+int main() {
+    TabletManager tabletManager;
+    tabletManager.initialize();
+    tabletManager.connect();
+    std::cout << "Kirebos Networks Tablet version is running." << std::endl;
+    return 0;
+}

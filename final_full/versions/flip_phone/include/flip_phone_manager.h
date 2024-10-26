@@ -1,2 +1,8 @@
 #pragma once
-class FlipPhoneManager { public: void manage(); };
+
+class FlipPhoneManager {
+public:
+    void initialize();
+    void connect();
+    void disconnect();
+};

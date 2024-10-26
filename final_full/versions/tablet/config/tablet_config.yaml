@@ -1,0 +1,10 @@
+application:
+  name: "Kirebos Networks Tablet"
+  version: "1.0.0"
+  environment: "tablet"
+logging:
+  file: "logs/tablet.log"
+  level: "info"
+network:
+  interface: "wifi"
+  autoConnect: true

@@ -1,0 +1,10 @@
+application:
+  name: "Kirebos Networks Mobile"
+  version: "1.0.0"
+  environment: "mobile"
+logging:
+  file: "logs/mobile.log"
+  level: "info"
+network:
+  interface: "wifi"
+  autoConnect: true

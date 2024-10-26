@@ -1,2 +1,8 @@
 #pragma once
-class CloudManager { public: void manage(); };
+
+class CloudManager {
+public:
+    void initialize();
+    void deploy();
+    void shutdown();
+};

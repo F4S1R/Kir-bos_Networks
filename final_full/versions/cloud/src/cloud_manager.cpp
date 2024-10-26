@@ -1,6 +1,14 @@
+#include "cloud_manager.h"
+#include <iostream>
 
-    #include "cloud_manager.h"
-    void CloudManager::manage() {
-        std::cout << "Managing Cloud version with all network and security configurations compiled." << std::endl;
-        // Full functionality for cloud version
-    }
+void CloudManager::initialize() {
+    std::cout << "Initializing cloud manager..." << std::endl;
+}
+
+void CloudManager::deploy() {
+    std::cout << "Deploying cloud resources..." << std::endl;
+}
+
+void CloudManager::shutdown() {
+    std::cout << "Shutting down cloud services..." << std::endl;
+}

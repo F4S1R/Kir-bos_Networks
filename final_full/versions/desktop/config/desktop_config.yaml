@@ -1,0 +1,10 @@
+application:
+  name: "Kirebos Networks Desktop"
+  version: "1.0.0"
+  environment: "desktop"
+logging:
+  file: "logs/desktop.log"
+  level: "info"
+network:
+  interface: "eth0"
+  autoConnect: true

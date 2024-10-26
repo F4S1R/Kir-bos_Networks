@@ -1,9 +1,10 @@
+#include "cloud_manager.h"
+#include <iostream>
 
-    #include <iostream>
-    #include "cloud_manager.h"
-    int main() {
-        CloudManager manager;
-        manager.manage();
-        std::cout << "Kirébos Networks Cloud Version - Fully Compiled and ready." << std::endl;
-        return 0;
-    }
+int main() {
+    CloudManager cloudManager;
+    cloudManager.initialize();
+    cloudManager.deploy();
+    std::cout << "Kirebos Networks Cloud version is running." << std::endl;
+    return 0;
+}

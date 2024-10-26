@@ -1,0 +1,10 @@
+application:
+  name: "Kirebos Networks Cloud"
+  version: "1.0.0"
+  environment: "cloud"
+network:
+  endpoint: "https://cloud.kirebosnetworks.com"
+  apiKey: "your_cloud_api_key_here"
+logging:
+  file: "logs/cloud.log"
+  level: "info"

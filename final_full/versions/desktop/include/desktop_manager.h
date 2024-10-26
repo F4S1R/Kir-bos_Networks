@@ -1,2 +1,8 @@
 #pragma once
-class DesktopManager { public: void manage(); };
+
+class DesktopManager {
+public:
+    void initialize();
+    void connect();
+    void disconnect();
+};

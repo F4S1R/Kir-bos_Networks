@@ -1,0 +1,10 @@
+application:
+  name: "Kirebos Networks Flip Phone"
+  version: "1.0.0"
+  environment: "flip_phone"
+logging:
+  file: "logs/flip_phone.log"
+  level: "info"
+network:
+  interface: "gsm"
+  autoConnect: true
