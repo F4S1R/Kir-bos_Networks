@@ -1,0 +1,14 @@
+language: java
+jdk:
+  - openjdk11
+
+script:
+  - ./gradlew build
+  - ./gradlew test
+
+notifications:
+  email:
+    recipients:
+      - your-email@domain.com
+    on_success: change
+    on_failure: always

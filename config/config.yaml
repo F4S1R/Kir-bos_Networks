@@ -1,8 +1,45 @@
+development:
+  application:
+    name: "Kirebos Networks Development"
+    version: "1.0.0-dev"
+    environment: "development"
+  database:
+    host: "localhost"
+    port: 3306
+    name: "kirebos_dev"
+    user: "devuser"
+    password: "devpass"
+  security:
+    firewallEnabled: true
+    maxLoginAttempts: 5
+    encryptionKey: "dev_encryption_key_here"
+  api:
+    baseUrl: "http://dev.api.kirebosnetworks.com/"
+    rateLimit: 1000
+    timeout: 30
+  logging:
+    level: "debug"
+    file: "logs/dev_app.log"
 
-    network:
-      security: high
-      dmz: enabled
-      versions: desktop, mobile, tablet, cloud, flip_phone
-      ssl: enabled
-      intrusion_detection: enabled
-    
+production:
+  application:
+    name: "Kirebos Networks"
+    version: "1.0.0"
+    environment: "production"
+  database:
+    host: "prod-db.example.com"
+    port: 3306
+    name: "kirebos_prod"
+    user: "produser"
+    password: "prodpass"
+  security:
+    firewallEnabled: true
+    maxLoginAttempts: 3
+    encryptionKey: "prod_encryption_key_here"
+  api:
+    baseUrl: "https://api.kirebosnetworks.com/"
+    rateLimit: 500
+    timeout: 20
+  logging:
+    level: "error"
+    file: "logs/prod_app.log"
