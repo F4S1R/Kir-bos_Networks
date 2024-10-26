@@ -12,13 +12,13 @@ DesktopConnection::~DesktopConnection() {
 bool DesktopConnection::connect(const std::string& endpoint) {
     this->endpoint = endpoint;
     connected = true;
-    std::cout << "Connected to " << endpoint << std::endl;
+    std::cout << "Connecté au service à " << endpoint << std::endl;
     return connected;
 }
 
 void DesktopConnection::disconnect() {
     if (connected) {
-        std::cout << "Disconnecting from " << endpoint << std::endl;
+        std::cout << "Déconnexion de " << endpoint << std::endl;
         connected = false;
     }
 }

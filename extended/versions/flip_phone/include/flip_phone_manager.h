@@ -1,9 +1,20 @@
+#pragma once
 
-    #pragma once
-    class FlipPhoneManager {
-    public:
-        void manage();
-    private:
-        void createFlipPhoneConnection();
-        void destroyFlipPhoneConnection();
-    };
+#include "flip_phone_connection.h"
+#include "flip_phone_security.h"
+#include "flip_phone_logger.h"
+
+class FlipPhoneManager {
+public:
+    FlipPhoneManager();
+    ~FlipPhoneManager();
+
+    void initialize();
+    void deploy();
+    void checkStatus();
+
+private:
+    FlipPhoneConnection connection;
+    FlipPhoneSecurity security;
+    FlipPhoneLogger logger;
+};

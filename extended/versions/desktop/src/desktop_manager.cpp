@@ -2,38 +2,38 @@
 #include <iostream>
 
 DesktopManager::DesktopManager() {
-    std::cout << "Initializing DesktopManager..." << std::endl;
+    std::cout << "Initialisation de DesktopManager..." << std::endl;
     connection.connect("http://localhost/api");
-    security.enableSSL(false);  // SSL peut être désactivé en local
-    logger.logInfo("DesktopManager initialized.");
+    security.enableSSL(false);  // SSL est désactivé en local
+    logger.logInfo("DesktopManager initialisé.");
 }
 
 DesktopManager::~DesktopManager() {
     connection.disconnect();
-    logger.logInfo("DesktopManager destroyed.");
+    logger.logInfo("DesktopManager détruit.");
 }
 
 void DesktopManager::initialize() {
-    std::cout << "DesktopManager: Initializing desktop settings..." << std::endl;
-    logger.logInfo("Desktop settings initialized.");
+    std::cout << "Initialisation des paramètres desktop..." << std::endl;
+    logger.logInfo("Paramètres desktop initialisés.");
 }
 
 void DesktopManager::deploy() {
-    std::cout << "DesktopManager: Deploying application locally..." << std::endl;
-    logger.logInfo("Deployment successful.");
+    std::cout << "Déploiement de l'application en local..." << std::endl;
+    logger.logInfo("Déploiement réussi.");
 }
 
 void DesktopManager::backup() {
-    std::cout << "DesktopManager: Running backup..." << std::endl;
-    logger.logInfo("Backup completed.");
+    std::cout << "Exécution de la sauvegarde..." << std::endl;
+    logger.logInfo("Sauvegarde terminée.");
 }
 
 void DesktopManager::checkStatus() {
-    std::cout << "DesktopManager: Checking application status..." << std::endl;
-    logger.logInfo("Status checked.");
+    std::cout << "Vérification de l'état de l'application..." << std::endl;
+    logger.logInfo("État vérifié.");
 }
 
 void DesktopManager::rollback() {
-    std::cout << "DesktopManager: Rolling back..." << std::endl;
-    logger.logError("Rollback completed.");
+    std::cout << "Annulation du déploiement..." << std::endl;
+    logger.logError("Rollback terminé.");
 }

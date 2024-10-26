@@ -1,8 +1,9 @@
 #include "desktop_logger.h"
 #include <iostream>
+#include <fstream>
 #include <ctime>
 
-DesktopLogger::DesktopLogger(const std::string& logFilePath) : log_file(logFilePath) {}
+DesktopLogger::DesktopLogger(const std::string& logFilePath) : log_file_path(logFilePath) {}
 
 DesktopLogger::~DesktopLogger() {}
 
@@ -19,7 +20,7 @@ void DesktopLogger::logError(const std::string& message) {
 }
 
 void DesktopLogger::writeLog(const std::string& level, const std::string& message) {
-    std::ofstream log_file("logs/desktop.log", std::ios::app);
+    std::ofstream log_file(log_file_path, std::ios::app);
     if (log_file.is_open()) {
         std::time_t now = std::time(nullptr);
         log_file << "[" << std::ctime(&now) << "] " << level << ": " << message << std::endl;

@@ -1,0 +1,5 @@
+connection:
+  endpoint: "http://localhost/api"   # Adresse de l'API en local pour tests
+  retry_interval: 10                 # Intervalle de tentative en secondes
+  max_retries: 2                     # Nombre maximum de tentatives
+  timeout: 5                         # Temps d'attente max pour les connexions

@@ -1,0 +1,9 @@
+application:
+  name: "Kirebos Networks Tablet"
+  version: "1.0.0"
+  environment: "tablet"
+
+settings:
+  auto_start: true
+  battery_optimization: true
+  max_connections: 5

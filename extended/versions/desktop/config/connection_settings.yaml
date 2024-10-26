@@ -1,0 +1,5 @@
+connection:
+  endpoint: "http://localhost:8080/api"       # Adresse de l'API locale
+  retry_interval: 5                           # Intervalle de tentative en secondes
+  max_retries: 3                              # Nombre maximum de tentatives
+  timeout: 15                                 # Délai d'attente maximum en secondes

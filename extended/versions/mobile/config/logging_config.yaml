@@ -1,0 +1,5 @@
+logging:
+  level: "warning"                  
+  file_path: "logs/mobile.log"
+  max_file_size: 5MB
+  backup_count: 2

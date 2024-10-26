@@ -1,0 +1,4 @@
+security:
+  ssl_enabled: true
+  max_login_attempts: 5
+  encryption_key: "tablet_encryption_key_here"

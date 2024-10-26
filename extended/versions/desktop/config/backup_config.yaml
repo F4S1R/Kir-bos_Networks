@@ -1,0 +1,5 @@
+backup:
+  enabled: true                               # Active les sauvegardes automatiques
+  frequency: "daily"                          # Fréquence des sauvegardes
+  backup_path: "backups/desktop/"             # Dossier de sauvegarde
+  max_backups: 7                              # Nombre de sauvegardes à conserver

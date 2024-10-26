@@ -1,0 +1,5 @@
+connection:
+  endpoint: "https://api.kirebosnetworks.com/mobile"
+  retry_interval: 5                 # Intervalle de tentative en secondes
+  max_retries: 3
+  timeout: 10

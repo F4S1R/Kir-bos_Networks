@@ -1,0 +1,9 @@
+application:
+  name: "Kirebos Networks Desktop"
+  version: "1.0.0"
+  environment: "desktop"
+
+settings:
+  auto_start: true
+  check_for_updates: true
+  update_interval: 7  # En jours

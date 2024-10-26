@@ -1,11 +1,12 @@
+#include "tablet_manager.h"
+#include <iostream>
 
-    #include <iostream>
-    #include "tablet_manager.h"
-    #include <openssl/ssl.h>
-    int main() {
-        SSL_library_init();
-        TabletManager manager;
-        manager.manage();
-        std::cout << "Kirébos Networks Tablet Version - Compiled with function calls and libraries." << std::endl;
-        return 0;
-    }
+int main() {
+    TabletManager tabletManager;
+    tabletManager.initialize();
+    tabletManager.deploy();
+    tabletManager.checkStatus();
+
+    std::cout << "Kirebos Networks Tablet est opérationnel." << std::endl;
+    return 0;
+}

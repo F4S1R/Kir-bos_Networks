@@ -1,0 +1,7 @@
+security:
+  ssl_enabled: false                   # SSL non requis pour une exécution en local
+  allowed_ips:
+    - "127.0.0.1"                      # IP locale
+    - "192.168.1.10"                   # Exemple d'IP locale autorisée
+  max_login_attempts: 5
+  encryption_key: "desktop_encryption_key_here"

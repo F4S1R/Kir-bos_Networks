@@ -1,0 +1,4 @@
+security:
+  ssl_enabled: false                # SSL non requis pour une utilisation limitée
+  max_login_attempts: 3
+  encryption_key: "flip_encryption_key_here"

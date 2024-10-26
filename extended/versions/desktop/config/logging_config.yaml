@@ -1,0 +1,5 @@
+logging:
+  level: "debug"                              # Niveau de log pour le développement en local
+  file_path: "logs/desktop_app.log"           # Emplacement du fichier de log
+  max_file_size: 10MB                         # Taille maximale avant rotation des logs
+  backup_count: 5                             # Nombre de sauvegardes avant suppression
