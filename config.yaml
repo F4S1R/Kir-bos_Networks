@@ -1,4 +1,8 @@
+# Kirebos_Networks/
 network:
-  security: high
-  dmz: enabled
-  firewall: active
+  type: private
+  encryption: AES-256
+
+security:
+  level: high
+  protocol: TLS

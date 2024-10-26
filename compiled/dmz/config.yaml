@@ -1,0 +1,4 @@
+# Compiled/DMZ/config.yaml
+dmz:
+  network: "192.168.1.0/24"
+  security_level: "High"

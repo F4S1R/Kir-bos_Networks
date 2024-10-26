@@ -1,9 +1,9 @@
+// Compiled/versions/desktop/src/main_desktop.cpp
+#include "DesktopManager.h"
 
-    #include <iostream>
-    #include "desktop_manager.h"
-    int main() {
-        DesktopManager manager;
-        manager.manage();
-        std::cout << "Kirébos Networks Desktop Version - Compiled and ready for production." << std::endl;
-        return 0;
-    }
+int main() {
+    std::cout << "Starting Kirébos Networks Desktop Application..." << std::endl;
+    DesktopManager desktopManager;
+    desktopManager.runApp();
+    return 0;
+}

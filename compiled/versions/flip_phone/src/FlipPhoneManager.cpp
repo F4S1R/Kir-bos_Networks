@@ -1,11 +1,7 @@
-// Compiled/versions/flip_phone/src/flip_phone_manager.cpp
+// Compiled/versions/flip_phone/src/FlipPhoneManager.cpp
 #include "flip_phone_manager.h"
-#include "UI.h"
-#include "Settings.h"
-#include "Security.h"
 
 FlipPhoneManager::FlipPhoneManager() {
-    // Initial setup could go here
     std::cout << "Flip Phone Manager initialized." << std::endl;
 }
 

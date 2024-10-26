@@ -1,2 +1,13 @@
+// Kirebos_Networks/
 #include <iostream>
-int main() { std::cout << "Kirébos Networks is running" << std::endl; return 0; }
+#include "NetworkManager.h"
+#include "SecurityManager.h"
+
+int main() {
+    NetworkManager netManager;
+    SecurityManager secManager;
+    netManager.initialize();
+    secManager.initialize();
+    std::cout << "System initialized and running." << std::endl;
+    return 0;
+}

@@ -1,9 +1,8 @@
+// Compiled/versions/mobile/src/main_mobile.cpp
+#include "MobileManager.h"
 
-    #include <iostream>
-    #include "mobile_manager.h"
-    int main() {
-        MobileManager manager;
-        manager.manage();
-        std::cout << "Kirébos Networks Mobile Version - Compiled and ready for production." << std::endl;
-        return 0;
-    }
+int main() {
+    MobileManager manager;
+    manager.runApp();
+    return 0;
+}
