@@ -1,8 +1,43 @@
+application:
+  name: "Kirebos Networks"
+  version: "1.0.0"
+  environment: "production"
 
-    network:
-      security: high
-      dmz: enabled
-      versions: desktop, mobile, tablet, cloud, flip_phone
-      ssl: enabled
-      intrusion_detection: enabled
-    
+settings:
+  auto_start: true
+  language: "en"
+  timezone: "UTC"
+  max_users: 100
+
+security:
+  encryption_enabled: true
+  encryption_key: "global_encryption_key_here"
+  max_login_attempts: 5
+  password_policy:
+    min_length: 8
+    require_special_char: true
+    require_uppercase: true
+  firewall:
+    enabled: true
+    default_policy: "deny"
+    allowed_ports:
+      - 80
+      - 443
+      - 8080
+
+logging:
+  level: "info"
+  file_path: "/opt/kirebos_networks/logs/general.log"
+  max_file_size: 10MB
+  backup_count: 5
+  console_output: true
+
+network:
+  api_endpoint: "https://api.kirebosnetworks.com/"
+  retry_interval: 5               # Intervalle de tentative en secondes
+  max_retries: 3
+  timeout: 10                      # Temps d'attente en secondes
+  connectivity_check:
+    enabled: true
+    check_interval: 60             # En secondes
+    notify_admin: true

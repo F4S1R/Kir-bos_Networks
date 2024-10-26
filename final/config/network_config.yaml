@@ -1,0 +1,9 @@
+network:
+  api_endpoint: "https://api.kirebosnetworks.com/"
+  retry_interval: 5                # Intervalle de tentative en secondes
+  max_retries: 3
+  timeout: 10                       # Temps d'attente en secondes
+  connectivity_check:
+    enabled: true
+    check_interval: 60              # En secondes
+    notify_admin: true

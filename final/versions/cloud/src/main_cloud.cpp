@@ -1,9 +1,15 @@
+#include "cloud_manager.h"
+#include <iostream>
 
-    #include <iostream>
-    #include "cloud_manager.h"
-    int main() {
-        CloudManager manager;
-        manager.manage();
-        std::cout << "Kirébos Networks Cloud Version - Finalized and Autonomous" << std::endl;
-        return 0;
-    }
+int main() {
+    std::cout << "Démarrage de Kirebos Networks - Version Cloud" << std::endl;
+
+    CloudManager cloudManager;
+    cloudManager.initialize();
+    cloudManager.deploy();
+    cloudManager.checkStatus();
+
+    std::cout << "Kirebos Networks - Cloud terminé." << std::endl;
+
+    return 0;
+}

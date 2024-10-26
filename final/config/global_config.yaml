@@ -1,0 +1,10 @@
+application:
+  name: "Kirebos Networks"
+  version: "1.0.0"
+  environment: "production"
+
+settings:
+  auto_start: true
+  language: "fr"
+  timezone: "Europe/Paris"
+  max_users: 100

@@ -1,0 +1,10 @@
+logging:
+  level: "info"                    # Options: debug, info, warning, error, critical
+  file_path: "/opt/kirebos_networks/logs/general.log"
+  max_file_size: 10MB
+  backup_count: 5
+  formats:
+    - "timestamp: '%Y-%m-%d %H:%M:%S'"
+    - "levelname: '%(levelname)s'"
+    - "message: '%(message)s'"
+  console_output: true

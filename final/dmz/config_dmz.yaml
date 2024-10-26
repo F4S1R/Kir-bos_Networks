@@ -1,0 +1,21 @@
+dmz:
+  enabled: true
+  firewall:
+    enabled: true
+    policy: "deny_all"
+    allowed_ips:
+      - "192.168.1.10"
+      - "192.168.1.20"
+  logging:
+    level: "debug"
+    file_path: "/opt/kirebos_networks/logs/dmz.log"
+  connection:
+    max_connections: 10
+    timeout: 30
+    reconnect_attempts: 3
+  security:
+    encryption: "AES-256"
+    encryption_key: "dmz_encryption_key_here"
+  monitoring:
+    enable_traffic_monitor: true
+    alert_threshold: 85

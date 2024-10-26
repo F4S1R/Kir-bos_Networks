@@ -1,0 +1,15 @@
+security:
+  encryption_enabled: true
+  max_login_attempts: 5
+  encryption_key: "global_encryption_key_here"
+  password_policy:
+    min_length: 8
+    require_special_char: true
+    require_uppercase: true
+  firewall:
+    enabled: true
+    default_policy: "deny"
+    allowed_ports:
+      - 80
+      - 443
+      - 8080
