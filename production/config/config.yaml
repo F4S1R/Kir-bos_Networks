@@ -1,8 +1,69 @@
+# Master Configuration File for Kirebos Networks Production Environment
 
-    network:
-      security: high
-      dmz: enabled
-      versions: desktop, mobile, tablet, cloud, flip_phone
-      ssl: enabled
-      intrusion_detection: enabled
-    
+application:
+  name: "Kirebos Networks"
+  version: "1.0.0"
+  environment: "production"
+  maintenance_mode: false
+  logging:
+    level: "info"
+    file: "logs/app.log"
+
+database:
+  # Reference to external configuration file
+  config_file: "database_config.yaml"
+  # Example of direct settings (replace if using external reference)
+  host: "prod-db.kirebosnetworks.com"
+  port: 3306
+  name: "kirebos_prod"
+  user: "prod_user"
+  password: "secure_password"
+
+network:
+  # Reference to external network configuration
+  config_file: "network_config.yaml"
+  # Direct configuration settings (optional if using external file)
+  security: high
+  dmz: enabled
+  ssl: enabled
+  versions:
+    - desktop
+    - mobile
+    - tablet
+    - cloud
+    - flip_phone
+  intrusion_detection:
+    enabled: true
+    sensitivity: medium
+    response_action: "alert_and_block"
+  firewall:
+    rules:
+      - allow: "tcp/443"
+      - allow: "tcp/80"
+      - deny: "all"
+  monitoring:
+    enabled: true
+    alert_threshold: 70  # Network usage alert in percentage
+
+security:
+  # Reference to external security configuration file
+  config_file: "security_config.yaml"
+  encryption_key: "production_secure_key"
+  max_login_attempts: 5
+  session_timeout: 30  # Session timeout in minutes
+  password_policy:
+    min_length: 12
+    require_special_chars: true
+    require_uppercase: true
+    require_numbers: true
+  two_factor_authentication: enabled
+
+api:
+  # Reference to external API configuration file
+  config_file: "api_config.yaml"
+  base_url: "https://api.kirebosnetworks.com/"
+  rate_limit: 500  # Requests per minute
+  timeout: 20  # API request timeout in seconds
+  authentication:
+    token_expiry: 3600  # Token expiration in seconds
+    refresh_token: enabled

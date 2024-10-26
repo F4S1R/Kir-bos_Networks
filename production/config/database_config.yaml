@@ -1,0 +1,9 @@
+database:
+  host: "prod-db.kirebosnetworks.com"
+  port: 3306
+  name: "kirebos_prod"
+  user: "prod_user"
+  password: "secure_password"
+  connection_pool:
+    max_connections: 100
+    min_connections: 10

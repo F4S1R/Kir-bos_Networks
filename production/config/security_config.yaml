@@ -1,0 +1,10 @@
+security:
+  encryption_key: "production_secure_key"
+  max_login_attempts: 5
+  session_timeout: 30  # minutes
+  password_policy:
+    min_length: 12
+    require_special_chars: true
+    require_uppercase: true
+    require_numbers: true
+  two_factor_authentication: enabled

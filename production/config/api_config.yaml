@@ -1,0 +1,7 @@
+api:
+  base_url: "https://api.kirebosnetworks.com/"
+  rate_limit: 500  # Limite de requêtes par minute
+  timeout: 20  # secondes
+  authentication:
+    token_expiry: 3600  # Durée en secondes
+    refresh_token: enabled

@@ -1,0 +1,8 @@
+application:
+  name: "Kirebos Networks"
+  version: "1.0.0"
+  environment: "production"
+  maintenance_mode: false
+  logging:
+    level: "info"
+    file: "logs/app.log"

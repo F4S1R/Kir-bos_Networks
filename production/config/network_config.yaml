@@ -1,0 +1,22 @@
+network:
+  security: high
+  dmz: enabled
+  versions:
+    - desktop
+    - mobile
+    - tablet
+    - cloud
+    - flip_phone
+  ssl: enabled
+  intrusion_detection:
+    enabled: true
+    sensitivity: medium
+    response_action: "alert_and_block"
+  firewall:
+    rules:
+      - allow: "tcp/443"
+      - allow: "tcp/80"
+      - deny: "all"
+  monitoring:
+    enabled: true
+    alert_threshold: 70  # en pourcentage d’utilisation du réseau
