@@ -1,0 +1,25 @@
+import logging
+import os
+
+log_directory = "Kirebos_Networks/logs"
+if not os.path.exists(log_directory):
+    os.makedirs(log_directory)
+
+logging.basicConfig(
+    filename=os.path.join(log_directory, 'network.log'),
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+
+logging.info('Network logging setup complete - network.log is ready.')
+
+# Ajouter des événements réseau supplémentaires
+logging.info("Connexion réseau établie (IP : 192.168.1.1).")
+logging.warning("Déconnexion réseau inattendue.")
+logging.info("Reconnexion réseau réussie (IP : 192.168.1.2).")
+logging.error("Échec de la connexion réseau - erreur DNS.")
+logging.info("Mise à jour de l'IP dynamique - nouvelle IP : 192.168.1.3.")
+logging.info("Test de la latence réseau réussi (Ping moyen : 20ms).")
+logging.info("Connexion sécurisée établie via VPN.")
+logging.warning("Tentative de connexion non autorisée détectée.")
+logging.info("Déconnexion planifiée pour maintenance réseau.")

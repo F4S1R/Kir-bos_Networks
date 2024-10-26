@@ -1,0 +1,19 @@
+import logging
+import os
+
+log_directory = "Kirebos_Networks/logs"
+if not os.path.exists(log_directory):
+    os.makedirs(log_directory)
+
+errors_log_path = os.path.join(log_directory, 'errors.log')
+logging.basicConfig(
+    filename=errors_log_path,
+    level=logging.ERROR,
+    format='%(asctime)s - Error - %(levelname)s - %(message)s'
+)
+
+# Événements d'erreurs
+logging.error("Erreur critique : échec de l'authentification.")
+logging.error("Erreur réseau : connexion perdue.")
+logging.error("Erreur de base de données : accès refusé.")
+logging.error("Erreur système : surchauffe détectée.")

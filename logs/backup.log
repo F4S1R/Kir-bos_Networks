@@ -1,0 +1,20 @@
+import logging
+import os
+
+log_directory = "Kirebos_Networks/logs"
+if not os.path.exists(log_directory):
+    os.makedirs(log_directory)
+
+backup_log_path = os.path.join(log_directory, 'backup.log')
+logging.basicConfig(
+    filename=backup_log_path,
+    level=logging.INFO,
+    format='%(asctime)s - Backup - %(levelname)s - %(message)s'
+)
+
+# Événements de sauvegarde
+logging.info("Initialisation de la sauvegarde.")
+logging.info("Sauvegarde complète réussie.")
+logging.warning("Sauvegarde partielle - certains fichiers n'ont pas été sauvegardés.")
+logging.error("Échec de la sauvegarde - espace disque insuffisant.")
+logging.info("Sauvegarde programmée pour demain à 03:00.")

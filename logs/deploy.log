@@ -1,0 +1,27 @@
+import logging
+import os
+
+# Configuration du répertoire de logs
+log_directory = "logs"
+if not os.path.exists(log_directory):
+    os.makedirs(log_directory)
+
+# Configuration du logger pour deploy.log
+deploy_logger = logging.getLogger("deploy")
+deploy_logger.setLevel(logging.INFO)
+file_handler = logging.FileHandler(os.path.join(log_directory, 'deploy.log'))
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+file_handler.setFormatter(formatter)
+deploy_logger.addHandler(file_handler)
+
+def log_deployment_start(version):
+    """Log l'initialisation d'un déploiement."""
+    deploy_logger.info(f"Déploiement initialisé pour la version {version}")
+
+def log_deployment_success(version):
+    """Log la réussite d'un déploiement."""
+    deploy_logger.info(f"Déploiement complété pour la version {version}")
+
+def log_deployment_warning(version, issue):
+    """Log un problème mineur lors d'un déploiement."""
+    deploy_logger.warning(f"Problème détecté lors du déploiement de la version {version}: {issue}")
