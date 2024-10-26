@@ -1,9 +1,15 @@
+#include "tablet_manager.h"
+#include <iostream>
 
-    #include <iostream>
-    #include "tablet_manager.h"
-    int main() {
-        TabletManager manager;
-        manager.manage();
-        std::cout << "Kirébos Networks Tablet Version - Finalized and Autonomous" << std::endl;
-        return 0;
-    }
+int main() {
+    std::cout << "Starting Kirebos Networks - Tablet Version" << std::endl;
+
+    TabletManager tabletManager;
+    tabletManager.initialize();
+    tabletManager.deploy();
+    tabletManager.checkStatus();
+
+    std::cout << "Kirebos Networks - Tablet version terminated." << std::endl;
+
+    return 0;
+}
