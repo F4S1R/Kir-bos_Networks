@@ -1,0 +1,13 @@
+firewallRules:
+  - rule: "Allow HTTP and HTTPS"
+    ports: [80, 443]
+    action: "allow"
+  - rule: "Block Telnet"
+    ports: [23]
+    action: "block"
+
+portForwarding:
+  - service: "Web Server"
+    internal_ip: "192.168.1.10"
+    external_port: 80
+    internal_port: 80
