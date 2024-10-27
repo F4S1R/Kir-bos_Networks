@@ -1,0 +1,17 @@
+# Platform Specific Settings
+[Desktop]
+ui_theme = "dark"
+notifications_enabled = true
+
+[Mobile]
+ui_theme = "light"
+battery_saving_mode = true
+notifications_enabled = true
+
+[FlipPhone]
+ui_theme = "minimal"
+notifications_enabled = false
+
+[Tablet]
+ui_theme = "dark"
+auto_rotate = true

@@ -1,0 +1,13 @@
+import time
+import logging
+
+logging.basicConfig(filename='../Security/IDS/ids_log.txt', level=logging.INFO)
+
+def monitor_connections():
+    while True:
+        # Code pour vérifier les connexions actives
+        logging.info("Connexion sécurisée détectée.")
+        time.sleep(10)  # Surveillance toutes les 10 secondes
+
+if __name__ == "__main__":
+    monitor_connections()

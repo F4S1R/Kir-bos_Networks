@@ -1,0 +1,15 @@
+# Security Settings
+[Encryption]
+type = OpenSSL
+encryption_level = AES-256
+
+[IDS]
+enabled = true
+alert_threshold = 5
+logging_enabled = true
+log_file = "../Security/IDS/ids_log.txt"
+
+[Alerts]
+email_notifications = true
+sms_notifications = false
+notification_email = "admin@kirebos.com"

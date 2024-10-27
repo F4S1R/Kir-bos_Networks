@@ -1,0 +1,14 @@
+# DMZ Configuration
+[General]
+dmz_mode = enabled
+firewall_rules_file = "../DMZ/firewall_rules/default_rules.conf"
+autonomy_mode = true
+
+[Hotspot]
+ssid = "Kirebos_DMZ_Hotspot"
+password = "HotspotPassword123"
+channel = 6
+
+[Security]
+allowed_ips = 192.168.1.0/24
+blocked_ports = 23, 3389

@@ -1,0 +1,21 @@
+# Network Configuration
+[General]
+default_port = 8080
+protocols_supported = WiFi, GSM, Bluetooth, Internet
+
+[WiFi]
+ssid = "YourNetworkSSID"
+password = "YourNetworkPassword"
+encryption_type = WPA2
+
+[GSM]
+provider = "DefaultProvider"
+apn = "your_apn"
+
+[Bluetooth]
+device_name = "KirebosNetwork_BT"
+pairing_mode = true
+
+[Internet]
+proxy_enabled = false
+proxy_port = 3128
