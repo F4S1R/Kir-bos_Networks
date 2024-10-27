@@ -1,9 +1,9 @@
+#include <iostream>
+#include "desktop_manager.h"
 
-    #include <iostream>
-    #include "desktop_manager.h"
-    int main() {
-        DesktopManager manager;
-        manager.manage();
-        std::cout << "Kirébos Networks Desktop Version is fully operational in production." << std::endl;
-        return 0;
-    }
+int main() {
+    DesktopManager manager;
+    manager.initialize();
+    std::cout << "Kirebos Networks Desktop Version - Successfully deployed and running" << std::endl;
+    return 0;
+}

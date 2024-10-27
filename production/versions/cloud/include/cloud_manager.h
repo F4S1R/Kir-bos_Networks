@@ -1,2 +1,16 @@
 #pragma once
-class CloudManager { public: void manage(); };
+
+#include "cloud_security.h"
+#include "cloud_logger.h"
+
+class CloudManager {
+public:
+    CloudManager();
+    ~CloudManager();
+
+    void initialize();
+    void deploy();
+    void backup();
+    void checkStatus();
+    void rollback();
+};
