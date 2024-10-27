@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QWidget" name="Settings">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QCheckBox" name="enableAlerts">
+     <property name="text">
+      <string>Activer les alertes</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="themeSelector">
+     <item>
+      <property name="text">
+       <string>Thème Clair</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Thème Sombre</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

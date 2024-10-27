@@ -1,0 +1,5 @@
+{
+    "network_monitoring": true,
+    "alert_level": "high",
+    "theme": "dark"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Reports</class>
+ <widget class="QWidget" name="Reports">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="reportsTitle">
+     <property name="text">
+      <string>Génération de Rapports</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="generatePDFButton">
+     <property name="text">
+      <string>Exporter au format PDF</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

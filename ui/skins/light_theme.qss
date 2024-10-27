@@ -1,0 +1,29 @@
+/* Light Theme */
+QMainWindow {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+QLabel, QLineEdit, QPushButton, QTableWidget {
+    color: #000000;
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+}
+
+QPushButton {
+    background-color: #E0E0E0;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #B0BEC5;
+}
+
+QMenuBar {
+    background-color: #F0F0F0;
+    color: #333333;
+}
+
+QStatusBar {
+    background-color: #F5F5F5;
+}

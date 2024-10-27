@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dashboard</class>
+ <widget class="QWidget" name="Dashboard">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="networkStatusLabel">
+     <property name="text">
+      <string>État du Réseau</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QProgressBar" name="networkLoadBar">
+     <property name="minimum">0</property>
+     <property name="maximum">100</property>
+     <property name="value">50</property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="connectionTable">
+     <column>
+      <property name="text">
+       <string>IP Adresse</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>État</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

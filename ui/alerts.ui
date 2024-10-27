@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Alerts</class>
+ <widget class="QWidget" name="Alerts">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="alertTitle">
+     <property name="text">
+      <string>Alertes Récentes</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="alertList"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

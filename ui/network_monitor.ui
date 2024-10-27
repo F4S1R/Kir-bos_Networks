@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NetworkMonitor</class>
+ <widget class="QWidget" name="NetworkMonitor">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="networkMonitorTitle">
+     <property name="text">
+      <string>Surveillance du Réseau</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="deviceTable">
+     <column>
+      <property name="text">
+       <string>Adresse IP</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Périphérique</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Utilisation de la bande passante</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="refreshButton">
+     <property name="text">
+      <string>Rafraîchir</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

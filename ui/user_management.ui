@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserManagement</class>
+ <widget class="QWidget" name="UserManagement">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="userManagementTitle">
+     <property name="text">
+      <string>Gestion des Utilisateurs</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="userTable">
+     <column>
+      <property name="text">
+       <string>Nom d'utilisateur</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Rôle</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="addUserButton">
+     <property name="text">
+      <string>Ajouter Utilisateur</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="removeUserButton">
+     <property name="text">
+      <string>Supprimer Utilisateur</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

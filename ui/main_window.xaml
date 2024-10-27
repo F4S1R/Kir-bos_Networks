@@ -1,9 +1,0 @@
-
-    <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-            Title="Kirébos Networks" Height="350" Width="525">
-        <Grid>
-            <Button Content="Manage Network" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" />
-            <TextBlock Text="Kirébos Networks Management Interface" />
-        </Grid>
-    </Window>
