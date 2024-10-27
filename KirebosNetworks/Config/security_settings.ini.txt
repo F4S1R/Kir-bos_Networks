@@ -1,7 +1,7 @@
-# Security Settings
+# Paramètres de sécurité pour Kirébos Networks
 [Encryption]
-type = OpenSSL
-encryption_level = AES-256
+type = AES-256
+encryption_key = "EncryptionKey123"
 
 [IDS]
 enabled = true

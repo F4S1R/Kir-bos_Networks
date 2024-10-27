@@ -1,7 +1,7 @@
-# Cloud Configuration
+# Configuration Cloud pour Kirébos Networks
 [General]
 cloud_sync_enabled = true
-sync_interval = 30  # in minutes
+sync_interval = 30
 
 [Authentication]
 api_key = "YourAPIKeyHere"

@@ -1,21 +1,21 @@
-# Network Configuration
+# Configuration réseau complète pour Kirébos Networks
 [General]
+protocols_supported = GSM, WiFi, Bluetooth, Ethernet, 5G
 default_port = 8080
-protocols_supported = WiFi, GSM, Bluetooth, Internet
 
 [WiFi]
-ssid = "YourNetworkSSID"
-password = "YourNetworkPassword"
+ssid = "Kirebos_Router_WiFi"
+password = "SecurePass123"
 encryption_type = WPA2
 
 [GSM]
+apn = "default_apn"
 provider = "DefaultProvider"
-apn = "your_apn"
 
 [Bluetooth]
-device_name = "KirebosNetwork_BT"
-pairing_mode = true
+device_name = "Kirebos_BT_Router"
+allowed_devices = ["Device_1_MAC", "Device_2_MAC"]
 
-[Internet]
-proxy_enabled = false
-proxy_port = 3128
+[Firewall]
+allowed_ports = 80, 443, 22  # HTTP, HTTPS, SSH
+blocked_ports = 23, 3389     # Telnet, Remote Desktop

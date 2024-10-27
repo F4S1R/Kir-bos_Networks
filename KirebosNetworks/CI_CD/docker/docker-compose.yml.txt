@@ -1,0 +1,8 @@
+version: '3'
+services:
+  monitoring:
+    build: .
+    container_name: kirebos_monitor
+    restart: always
+    volumes:
+      - ./Security/IDS:/app/Security/IDS
