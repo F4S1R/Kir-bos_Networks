@@ -1,0 +1,15 @@
+<Window x:Class="KirebosNetworks.SystemStatusPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="État du Système" Height="600" Width="800">
+    <Grid>
+        <TextBlock Text="État du Système" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,10"/>
+
+        <StackPanel Margin="20">
+            <TextBlock Text="Statut des Modules" FontSize="16" FontWeight="Bold"/>
+            <DataGrid Name="moduleStatusGrid" AutoGenerateColumns="True" Height="300" Margin="10">
+                <!-- Exemple de données : Module, Statut -->
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

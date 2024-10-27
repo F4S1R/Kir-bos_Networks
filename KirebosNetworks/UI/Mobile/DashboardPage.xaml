@@ -1,0 +1,50 @@
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtCharts 2.15
+
+ApplicationWindow {
+    visible: true
+    width: 360
+    height: 640
+    title: "Tableau de Bord"
+
+    Column {
+        anchors.fill: parent
+        spacing: 20
+        padding: 20
+
+        Text {
+            text: "Tableau de Bord"
+            font.pixelSize: 24
+            font.bold: true
+        }
+
+        ChartView {
+            width: parent.width
+            height: 200
+            title: "Activité Réseau"
+            PieSeries {
+                PieSlice { label: "WiFi"; value: 40 }
+                PieSlice { label: "GSM"; value: 30 }
+                PieSlice { label: "Bluetooth"; value: 20 }
+                PieSlice { label: "Internet"; value: 10 }
+            }
+        }
+
+        TableView {
+            width: parent.width
+            height: 200
+            model: TableModel {
+                TableModelColumn { display: "Nom"; displayEdit: true }
+                TableModelColumn { display: "Statut"; displayEdit: true }
+            }
+        }
+
+        Row {
+            spacing: 20
+            Button { text: "Rafraîchir" }
+            Button { text: "Exporter" }
+            Button { text: "Paramètres" }
+        }
+    }
+}

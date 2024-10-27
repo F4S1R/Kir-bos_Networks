@@ -1,0 +1,18 @@
+<Window x:Class="KirebosNetworks.AdminPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Administration" Height="600" Width="800">
+    <Grid>
+        <TextBlock Text="Administration" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+        
+        <StackPanel Margin="30">
+            <TextBlock Text="Paramètres de sécurité" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="Chiffrement : AES-256" Margin="0,5"/>
+            <Button Content="Activer l'authentification à deux facteurs" Width="250" Margin="0,10"/>
+            
+            <TextBlock Text="Surveillance des connexions" FontSize="16" FontWeight="Bold" Margin="0,20,0,0"/>
+            <TextBlock Text="Dernière alerte : Aucune"/>
+            <Button Content="Voir les logs" Width="150" Margin="0,10"/>
+        </StackPanel>
+    </Grid>
+</Window>

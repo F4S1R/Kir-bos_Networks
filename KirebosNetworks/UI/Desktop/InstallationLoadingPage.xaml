@@ -1,0 +1,14 @@
+<Window x:Class="KirebosNetworks.InstallationLoadingPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Installation - Kirebos Networks" Height="400" Width="600">
+    <Grid>
+        <Image Source="Assets/logo.png" Width="200" Height="200" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+        
+        <TextBlock Text="Installation en cours..." FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0"/>
+
+        <ProgressBar Name="loadingBar" Height="20" Width="400" HorizontalAlignment="Center" Margin="0,150,0,0" IsIndeterminate="True"/>
+        
+        <TextBlock Name="loadingText" Text="Veuillez patienter, le logiciel s'installe..." FontSize="12" HorizontalAlignment="Center" Margin="0,180,0,0"/>
+    </Grid>
+</Window>

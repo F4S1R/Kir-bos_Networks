@@ -1,0 +1,51 @@
+<Window x:Class="KirebosNetworks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kirebos Networks" Height="800" Width="1200">
+    <Grid>
+        <!-- Menu principal -->
+        <Menu VerticalAlignment="Top" Background="#333333">
+            <MenuItem Header="Fichier">
+                <MenuItem Header="Nouveau"/>
+                <MenuItem Header="Ouvrir"/>
+                <MenuItem Header="Enregistrer"/>
+                <MenuItem Header="Quitter"/>
+            </MenuItem>
+            <MenuItem Header="Réseau">
+                <MenuItem Header="Connexion"/>
+                <MenuItem Header="Déconnexion"/>
+                <MenuItem Header="Configuration Réseau"/>
+            </MenuItem>
+            <MenuItem Header="Administration">
+                <MenuItem Header="Utilisateurs"/>
+                <MenuItem Header="Logs"/>
+                <MenuItem Header="Paramètres de Sécurité"/>
+            </MenuItem>
+            <MenuItem Header="Aide">
+                <MenuItem Header="Documentation"/>
+                <MenuItem Header="À propos"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Tableau des connexions réseau -->
+        <StackPanel Orientation="Vertical" Margin="20">
+            <TextBlock Text="Tableau des Connexions Réseau" FontSize="20" FontWeight="Bold" Margin="0,20,0,10"/>
+            <DataGrid Name="dataGrid" AutoGenerateColumns="True" Height="200" Margin="0,0,0,20">
+                <!-- Exemple de données -->
+            </DataGrid>
+
+            <!-- Graphique des activités réseau -->
+            <TextBlock Text="Graphique des Activités Réseau" FontSize="20" FontWeight="Bold" Margin="0,20,0,10"/>
+            <Chart Name="networkActivityChart" Height="250">
+                <!-- Graphique dynamique -->
+            </Chart>
+
+            <!-- Boutons d'interaction -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <Button Content="Actualiser" Width="100" Margin="10"/>
+                <Button Content="Exporter" Width="100" Margin="10"/>
+                <Button Content="Paramètres Avancés" Width="150" Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

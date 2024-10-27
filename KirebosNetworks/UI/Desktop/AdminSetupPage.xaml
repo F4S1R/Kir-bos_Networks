@@ -1,0 +1,18 @@
+<Window x:Class="KirebosNetworks.AdminSetupPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Configuration de l'Administrateur" Height="400" Width="600">
+    <Grid>
+        <Image Source="Assets/logo.png" Width="150" Height="150" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+        
+        <TextBlock Text="Configuration de l'Administrateur" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,180,0,0"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+            <TextBox Name="adminNameBox" PlaceholderText="Nom complet" Margin="0,10"/>
+            <TextBox Name="adminEmailBox" PlaceholderText="Email" Margin="0,10"/>
+            <PasswordBox Name="adminPasswordBox" PlaceholderText="Mot de passe" Margin="0,10"/>
+            <PasswordBox Name="adminConfirmPasswordBox" PlaceholderText="Confirmer le mot de passe" Margin="0,10"/>
+            <Button Content="Enregistrer" Width="150" Margin="0,20,0,0" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>

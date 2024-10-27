@@ -1,0 +1,15 @@
+<Window x:Class="KirebosNetworks.UserManagementPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gestion des Utilisateurs" Height="600" Width="800">
+    <Grid>
+        <TextBlock Text="Gestion des Utilisateurs" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,10"/>
+
+        <StackPanel Margin="20">
+            <Button Content="Ajouter Utilisateur" Width="150" HorizontalAlignment="Left" Margin="0,10"/>
+            <DataGrid Name="userGrid" AutoGenerateColumns="True" Height="400" Margin="10">
+                <!-- Colonnes dynamiques : Nom, Rôle, Statut -->
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>
