@@ -1,0 +1,9 @@
+{
+    "api_url": "https://api.example.com",
+    "routes": {
+      "notify": "/notify",
+      "status": "/status",
+      "data_upload": "/upload"
+    }
+  }
+  

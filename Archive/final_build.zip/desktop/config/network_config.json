@@ -1,0 +1,11 @@
+{
+    "auto_connect": true,
+    "allowed_networks": ["WiFi", "Bluetooth", "GSM", "Internet"],
+    "protocols": {
+      "internet": true,
+      "bluetooth": true,
+      "gsm": true,
+      "wifi": true
+    }
+  }
+  
