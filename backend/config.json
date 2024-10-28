@@ -1,0 +1,10 @@
+{
+    "api_url": "https://api.example.com",
+    "admin_email": "admin@example.com",
+    "security_key": "votre_cle_securite",
+    "notification_settings": {
+      "priority_levels": ["high", "medium", "low"],
+      "default_priority": "medium"
+    }
+  }
+  

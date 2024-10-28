@@ -1,0 +1,12 @@
+// language_config.json
+{
+    "default_language": "FR",
+    "supported_languages": ["EN", "FR", "ES"]
+  }
+  
+  // network_config.json
+  {
+    "auto_connect": true,
+    "allowed_networks": ["WiFi", "Ethernet"]
+  }
+  
