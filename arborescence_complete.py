@@ -1,9 +1,9 @@
 import os
 
-# Nom du dossier racine
+# Nom du dossier racine pour générer l’arborescence complète
 base_dir = "Kirebos_NetworksComplete"
 
-# Structure ordonnée et optimisée pour le projet
+# Structure détaillée et ordonnée de l'arborescence du projet
 structure = {
     "initial_tests": {
         "unit_tests": ["network_tests.py", "interface_tests.py"],
