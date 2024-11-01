@@ -3,7 +3,7 @@ import os
 # Nom du dossier racine pour l’archive complète
 base_dir = "Kirebos_Networks"
 
-# Structure enrichie avec gestion des VM, tests réseau, simulation et processus complets
+# Structure complète et enrichie pour Kirebos Networks avec intégration complète
 structure = {
     "archive": {
         "previous_versions": ["v1.0.zip", "v1.1.zip"]
