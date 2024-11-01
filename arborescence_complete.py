@@ -3,7 +3,7 @@ import os
 # Nom du dossier racine pour l’archive complète
 base_dir = "Kirebos_Networks"
 
-# Structure finale avec dossier de démonstration et présentation finale
+# Structure finale incluant les tests d'intégration et la vérification finale
 structure = {
     "archive": {
         "previous_versions": ["v1.0.zip", "v1.1.zip"]
@@ -38,6 +38,50 @@ structure = {
             "tools": ["build_checker.py", "deployment_validator.py"]
         },
         "logs": ["dev_log.txt", "ci_cd_log.txt"]
+    },
+    "integration_tests": {
+        "scripts": ["run_all_tests.py", "integration_test_setup.py", "verify_inter_module_communication.py"],
+        "configs": ["test_integration_config.yaml"],
+        "reports": ["final_integration_report.txt"],
+        "logs": ["integration_test_log.txt"]
+    },
+    "ai": {
+        "models": ["model_architecture.json", "model_weights.h5"],
+        "training": ["train.py", "evaluate.py", "data_preprocessing.py"],
+        "deployment": ["model_serving.py", "api_inference.py"],
+        "data": {
+            "datasets": ["training_data.csv", "validation_data.csv"],
+            "processed": ["processed_training_data.csv", "processed_validation_data.csv"],
+            "logs": ["data_processing_log.txt"]
+        },
+        "visualizations": ["loss_accuracy_plot.py", "feature_importance.py", "confusion_matrix.py"],
+        "config": ["training_config.yaml", "deployment_config.yaml"],
+        "logs": ["training_log.txt", "deployment_log.txt"]
+    },
+    "documentation_advanced": {
+        "admin_guides": ["admin_guide_fr.pdf", "admin_guide_en.pdf"],
+        "backup_restore": ["backup_procedure.md", "restore_procedure.md"],
+        "access_management": ["user_roles_management.md", "privilege_escalation_guide.md"],
+        "use_cases": ["advanced_usage_examples.md", "case_studies.pdf"],
+        "logs": ["documentation_updates_log.txt"]
+    },
+    "performance_logging": {
+        "metrics_collection": ["cpu_usage.py", "memory_usage.py", "disk_io_monitor.py"],
+        "logs": ["performance_metrics_log.txt"],
+        "reporting": ["daily_performance_report.py", "weekly_performance_summary.py"],
+        "analytics_dashboard": ["metrics_dashboard.html", "resource_analysis.py"]
+    },
+    "update_system": {
+        "scripts": ["check_for_updates.py", "download_update.py", "install_update.py", "version_tracker.py"],
+        "config": ["update_config.yaml"],
+        "logs": ["update_log.txt", "installation_log.txt"],
+        "backup": ["previous_version_backup.zip", "rollback_script.sh"]
+    },
+    "user_feedback": {
+        "collection": ["feedback_collector.py", "survey_form.html"],
+        "storage": ["feedback_database.db", "feedback_storage.yaml"],
+        "dashboard": ["feedback_dashboard.html", "analytics_view.py"],
+        "logs": ["feedback_log.txt", "issue_tracking_log.txt"]
     },
     "demonstration": {
         "user_guides": ["user_guide_overview_fr.pdf", "user_guide_overview_en.pdf", "quick_start_demo.pdf"],
@@ -136,114 +180,6 @@ structure = {
         "flip_phone": ["test_flip_compatibility.py"],
         "web": ["test_web_chrome.py", "test_web_firefox.py", "test_web_safari.py"],
         "logs": ["compatibility_test_log.txt"]
-    },
-    "documentation": {
-        "api_docs": ["api_reference_fr.md", "api_reference_en.md", "api_endpoints_overview.md"],
-        "system_architecture": ["system_overview.md", "data_flow_diagram.md", "component_interaction.md"],
-        "internal_notes": ["development_guidelines.md", "performance_optimizations.md", "troubleshooting_internal.md"],
-        "logs": ["documentation_log.txt"]
-    },
-    "versions": {
-        "windows": ["KirebosNetworks_installer.exe"],
-        "linux": ["KirebosNetworks_installer.deb"],
-        "mac": ["KirebosNetworks_installer.pkg"],
-        "android": ["KirebosNetworks.apk"],
-        "ios": ["KirebosNetworks.ipa"]
-    },
-    "installation": {
-        "executables": ["installer.exe", "setup.sh"],
-        "docs": ["installation_guide_fr.pdf", "installation_guide_en.pdf", "requirements.txt"],
-        "scripts": [
-            "dependency_check.py",
-            "install_modules.sh",
-            "configurator.py",
-            "auto_compile.sh",
-            "package_builder.sh",
-            "isolation_configurator.py",
-            "security_hardening.sh",
-            "update_manager.py",
-            "sync_versions.sh"
-        ],
-        "logs": [
-            "installation_log.txt",
-            "error_log.txt",
-            "automation_log.txt",
-            "update_log.txt"
-        ]
-    },
-    "programming_states": {
-        "prototype": {
-            "docs": ["prototype_notes.md"],
-            "src": ["prototype_main.cpp"],
-            "logs": ["prototype_log.txt"]
-        },
-        "development": {
-            "docs": ["dev_notes.md"],
-            "src": [
-                "main.cpp",
-                "NetworkManager.cpp",
-                "UIManager.cpp"
-            ],
-            "tests": ["unit_tests.py", "integration_tests.py"],
-            "logs": ["development_log.txt"]
-        },
-        "pre_production": {
-            "docs": ["pre_prod_notes.md"],
-            "src": ["main.cpp", "NetworkManager.cpp", "UIManager.cpp"],
-            "tests": ["qa_tests.py"],
-            "config": ["pre_prod_config.json", "feature_toggles.yaml"],
-            "logs": ["pre_production_log.txt"]
-        },
-        "production": {
-            "docs": ["prod_release_notes_fr.md", "prod_release_notes_en.md", "user_manual_fr.pdf", "user_manual_en.pdf"],
-            "config": ["production_config.json", "performance_optimization.yaml"],
-            "deployment_scripts": ["deploy.sh", "backup.sh"],
-            "logs": ["production_log.txt"]
-        }
-    },
-    "deployment_states": {
-        "unit_tests": {
-            "basic_tests": ["test_network.py", "test_ui.py"],
-            "logs": ["unit_tests_log.txt"]
-        },
-        "advanced_tests": {
-            "performance_tests": ["stress_test.py", "load_test.py"],
-            "security_tests": ["firewall_test.py", "honeypot_test.py"],
-            "logs": ["advanced_tests_log.txt"]
-        },
-        "cloud_deployment": {
-            "aws": ["aws_setup.sh", "aws_performance_config.json"],
-            "gcp": ["gcp_setup.sh", "gcp_performance_config.json"],
-            "logs": ["cloud_deployment_log.txt"]
-        },
-        "local_deployment": ["install_local.sh", "configure_local_env.sh", "local_performance_config.json"],
-        "logs": ["local_deployment_log.txt"]
-    },
-    "functioning": {
-        "real_time_monitoring": ["network_status.py", "security_alerts.py", "process_health_check.py"],
-        "logs": ["connection_logs.txt", "event_logs.txt"],
-        "reports": ["daily_report.py", "weekly_report.py"],
-        "error_handling": ["error_handler.py", "error_reports.txt"]
-    },
-    "security": {
-        "dmz_config": ["iptables_rules.sh", "vpn_setup.ovpn"],
-        "monitoring": ["honeypot_config.py", "fail2ban_config.conf", "security_audit.py", "continuous_audit.sh"],
-        "backup_and_recovery": ["backup_db.sh", "recovery_guide.pdf", "backup_scheduler.sh", "recovery_manager.py"],
-        "logs": ["security_log.txt", "audit_log.txt", "backup_log.txt", "audit_report.txt"],
-        "compliance": ["permission_manager.py", "compliance_checker.sh"]
-    },
-    "archive_management": {
-        "scripts": ["archive_logs.sh", "compress_reports.sh"],
-        "logs": ["archive_log.txt"]
-    },
-    "maintenance": {
-        "scripts": ["maintenance_scheduler.sh", "optimize_database.py", "clean_temp_files.sh"],
-        "logs": ["maintenance_log.txt"]
-    },
-    "uninstallation": {
-        "uninstall_scripts": ["remove_all.sh", "uninstall_guide_fr.pdf", "uninstall_guide_en.pdf"],
-        "backup_options": ["backup_logs.sh", "archive_settings.py"],
-        "logs": ["uninstallation_log.txt"]
     },
     "docs": {
         "installation_guide": ["installation_windows_fr.md", "installation_windows_en.md", "installation_linux_fr.md", "installation_linux_en.md", "installation_mac_fr.md", "installation_mac_en.md"],
