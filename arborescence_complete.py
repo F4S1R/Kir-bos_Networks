@@ -1,80 +1,105 @@
 import os
 
-# Nom du dossier racine pour générer l’arborescence complète
-base_dir = "Kirebos_NetworksComplete"
+# Nom du dossier racine pour l’archive complète
+base_dir = "Kirebos_Networks"
 
-# Structure détaillée et ordonnée de l'arborescence du projet
+# Structure enrichie avec archivage, développement, compilation, UX/UI, versioning
 structure = {
-    "initial_tests": {
-        "unit_tests": ["network_tests.py", "interface_tests.py"],
-        "integration_tests": ["dmz_integration_tests.py"]
+    "archive": {
+        "previous_versions": ["v1.0.zip", "v1.1.zip"]
     },
-    "advanced_tests": {
-        "beta": ["beta_version_release_notes.md"],
-        "performance_tests": ["load_tests.py", "stress_tests.py"],
-        "security_tests": ["firewall_tests.py", "honeypot_tests.py"],
-        "compatibility_tests": ["compatibility_windows.py", "compatibility_linux.py", "compatibility_raspberry_pi.py"],
-        ".": ["run_all_tests.sh"]
-    },
-    "pre_production": {
-        "release_candidate": ["release_candidate_notes.md"],
-        "quality_assurance": ["qa_report.md"]
-    },
-    "production": {
-        "final_version": ["release_notes.md", "user_manual.pdf"],
-        "deployment_scripts": ["deploy_dmz.sh", "setup_vpn.sh"],
-        "cloud_deployment": ["deploy_cloud_aws.sh", "deploy_cloud_gcp.sh"]
-    },
-    "distribution": {
-        "packaging": ["installer_windows.exe", "installer_linux.deb"],
-        "documentation_user": ["installation_guide.pdf", "user_manual.pdf"],
-        "release_notes": ["release_notes.txt"]
-    },
-    "KirebosNetworks": {
-        "src": [
-            "main.cpp",
-            "NetworkManager.cpp",
-            "NetworkManager.hpp",
-            "UIManager.cpp",
-            "UIManager.hpp",
-            "EncryptionManager.cpp",
-            "EncryptionManager.hpp",
-            "Utils.cpp",
-            "Utils.hpp"
-        ],
-        "python": ["server.py", "dmz_config.py"],
-        "cloud": {
-            "api": ["app.js", "api_routes.js", "database_config.js"],
-            "frontend": ["index.html", "style.css", "app.js"],
-            "docker": ["Dockerfile", "docker-compose.yml"]
+    "dev": {
+        "src": {
+            "core": ["main.cpp", "NetworkManager.cpp", "UIManager.cpp"],
+            "modules": ["encryption.cpp", "utils.cpp"]
+        },
+        "lib": ["third_party_lib.so", "custom_library.a"],
+        "build": {
+            "windows": ["compile.bat"],
+            "linux": ["compile.sh"],
+            "macos": ["compile_macos.sh"]
         }
     },
-    "ui": {
+    "ux_ui": {
         "desktop": ["main_window.xaml", "styles.xaml"],
-        "tablet": ["tablet_view.qml"],
-        "mobile": ["mobile_view.qml"],
-        "flip_phone": {
-            "java_me": ["flip_phone_interface.java"]
+        "mobile": {
+            "android": ["android_main.xml", "android_styles.xml"],
+            "ios": ["ios_main.storyboard", "ios_styles.plist"]
+        },
+        "web": ["index.html", "app.css", "app.js"]
+    },
+    "versions": {
+        "windows": ["KirebosNetworks_installer.exe"],
+        "linux": ["KirebosNetworks_installer.deb"],
+        "mac": ["KirebosNetworks_installer.pkg"],
+        "android": ["KirebosNetworks.apk"],
+        "ios": ["KirebosNetworks.ipa"]
+    },
+    "installation": {
+        "executables": ["installer.exe", "setup.sh"],
+        "docs": ["installation_guide.pdf", "requirements.txt"],
+        "scripts": ["dependency_check.py", "install_modules.sh"]
+    },
+    "programming_states": {
+        "prototype": {
+            "docs": ["prototype_notes.md"],
+            "src": ["prototype_main.cpp"]
+        },
+        "development": {
+            "docs": ["dev_notes.md"],
+            "src": [
+                "main.cpp",
+                "NetworkManager.cpp",
+                "UIManager.cpp"
+            ],
+            "tests": ["unit_tests.py", "integration_tests.py"]
+        },
+        "pre_production": {
+            "docs": ["pre_prod_notes.md"],
+            "src": ["main.cpp", "NetworkManager.cpp", "UIManager.cpp"],
+            "tests": ["qa_tests.py"]
+        },
+        "production": {
+            "docs": ["prod_release_notes.md", "user_manual.pdf"],
+            "deployment_scripts": ["deploy.sh", "backup.sh"]
         }
     },
-    "config": {
-        "iptables": ["firewall_rules.sh"],
-        "vpn": ["vpn_config.ovpn"],
-        "honeypot": ["honeypot_config.py"]
+    "deployment_states": {
+        "unit_tests": {
+            "basic_tests": ["test_network.py", "test_ui.py"],
+        },
+        "advanced_tests": {
+            "performance_tests": ["stress_test.py", "load_test.py"],
+            "security_tests": ["firewall_test.py", "honeypot_test.py"],
+        },
+        "cloud_deployment": {
+            "aws": ["aws_setup.sh"],
+            "gcp": ["gcp_setup.sh"]
+        },
+        "local_deployment": ["install_local.sh", "configure_local_env.sh"]
+    },
+    "functioning": {
+        "real_time_monitoring": ["network_status.py", "security_alerts.py"],
+        "logs": ["connection_logs.txt", "event_logs.txt"],
+        "reports": ["daily_report.py", "weekly_report.py"]
+    },
+    "security": {
+        "dmz_config": ["iptables_rules.sh", "vpn_setup.ovpn"],
+        "monitoring": ["honeypot_config.py", "fail2ban_config.conf"],
+        "backup_and_recovery": ["backup_db.sh", "recovery_guide.pdf"]
+    },
+    "uninstallation": {
+        "uninstall_scripts": ["remove_all.sh", "uninstall_guide.pdf"],
+        "backup_options": ["backup_logs.sh", "archive_settings.py"]
     },
     "docs": {
-        "installation_guide": [
-            "installation_windows.md",
-            "installation_linux.md",
-            "installation_raspberry_pi.md"
-        ],
-        "technical_notes": ["networking_overview.md", "dmz_security.md"],
-        "user_manual": ["user_guide.pdf"],
-        "readme": ["Readme_Python.md", "ReadMe_CompletéD.md"]
+        "installation_guide": ["installation_windows.md", "installation_linux.md"],
+        "technical_notes": ["architecture.md", "dmz_security.md"],
+        "user_manual": ["user_guide.pdf"]
     }
 }
 
-# Fonction pour créer l’arborescence et insérer un placeholder
+# Fonction pour créer l’arborescence sans contenu dans les fichiers
 def create_structure(base_path, structure):
     for folder, contents in structure.items():
         folder_path = os.path.join(base_path, folder)
@@ -84,22 +109,11 @@ def create_structure(base_path, structure):
                 create_structure(folder_path, item)
             else:
                 file_path = os.path.join(folder_path, item)
-                with open(file_path, 'w') as file:
-                    # Placeholder indiquant le type de fichier pour chaque compatibilité
-                    file.write(f"# Placeholder for {item}\n")
-                    file.write("# Remarques:\n")
-                    if "java_me" in folder_path:
-                        file.write("# Compatible Java ME pour les flip phones\n")
-                    elif "desktop" in folder_path:
-                        file.write("# Interface Desktop (WPF)\n")
-                    elif "tablet" in folder_path or "mobile" in folder_path:
-                        file.write("# Interface pour tablette et mobile (QML)\n")
-                    elif "cloud" in folder_path:
-                        file.write("# Backend et API REST pour version Cloud\n")
-                    file.write("# Complétez ce fichier selon les spécifications de Kirebos Networks.\n")
+                # Crée un fichier vide
+                open(file_path, 'w').close()
                 print(f"Fichier créé : {file_path}")
 
 # Exécuter la création de l’arborescence
 if __name__ == "__main__":
     create_structure(base_dir, structure)
-    print(f"Arborescence '{base_dir}' générée avec succès pour toutes les versions compatibles.")
+    print(f"Arborescence '{base_dir}' générée avec succès avec tous les fichiers vides.")
