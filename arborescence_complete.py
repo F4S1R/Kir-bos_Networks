@@ -3,7 +3,7 @@ import os
 # Nom du dossier racine pour l’archive complète
 base_dir = "Kirebos_Networks"
 
-# Structure finale de l'arborescence avec logs, scripts de gestion des erreurs, et déploiement complet
+# Structure complète et enrichie pour tout couvrir dans le projet Kirebos Networks
 structure = {
     "archive": {
         "previous_versions": ["v1.0.zip", "v1.1.zip"]
@@ -11,14 +11,16 @@ structure = {
     "dev": {
         "src": {
             "core": ["main.cpp", "NetworkManager.cpp", "UIManager.cpp"],
-            "modules": ["encryption.cpp", "utils.cpp"]
+            "modules": ["encryption.cpp", "utils.cpp"],
+            "tests": ["core_tests.cpp", "integration_tests.cpp"]
         },
         "lib": ["third_party_lib.so", "custom_library.a"],
         "build": {
             "windows": ["compile.bat"],
             "linux": ["compile.sh"],
             "macos": ["compile_macos.sh"]
-        }
+        },
+        "logs": ["dev_log.txt"]  # Journal pour le développement
     },
     "ux_ui": {
         "desktop": ["main_window.xaml", "styles.xaml"],
@@ -26,7 +28,8 @@ structure = {
             "android": ["android_main.xml", "android_styles.xml"],
             "ios": ["ios_main.storyboard", "ios_styles.plist"]
         },
-        "web": ["index.html", "app.css", "app.js"]
+        "web": ["index.html", "app.css", "app.js"],
+        "logs": ["ux_ui_log.txt"]  # Logs pour les modifications UX/UI
     },
     "versions": {
         "windows": ["KirebosNetworks_installer.exe"],
@@ -96,7 +99,8 @@ structure = {
     "functioning": {
         "real_time_monitoring": ["network_status.py", "security_alerts.py"],
         "logs": ["connection_logs.txt", "event_logs.txt"],
-        "reports": ["daily_report.py", "weekly_report.py"]
+        "reports": ["daily_report.py", "weekly_report.py"],
+        "error_handling": ["error_handler.py", "error_reports.txt"]  # Gestion et rapport d'erreurs
     },
     "security": {
         "dmz_config": ["iptables_rules.sh", "vpn_setup.ovpn"],
@@ -116,7 +120,7 @@ structure = {
     }
 }
 
-# Fonction pour créer l’arborescence sans contenu dans les fichiers
+# Fonction pour créer l’arborescence avec tous les dossiers, fichiers, et logs sans contenu
 def create_structure(base_path, structure):
     for folder, contents in structure.items():
         folder_path = os.path.join(base_path, folder)
