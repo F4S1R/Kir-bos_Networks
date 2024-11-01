@@ -3,7 +3,7 @@ import os
 # Nom du dossier racine pour l’archive complète
 base_dir = "Kirebos_Networks"
 
-# Structure complète et validée de l'arborescence pour Kirebos Networks
+# Structure étendue de l'arborescence avec gestion d’erreurs, logs, et prises en charge
 structure = {
     "archive": {
         "previous_versions": ["v1.0.zip", "v1.1.zip"]
@@ -38,12 +38,20 @@ structure = {
     "installation": {
         "executables": ["installer.exe", "setup.sh"],
         "docs": ["installation_guide.pdf", "requirements.txt"],
-        "scripts": ["dependency_check.py", "install_modules.sh"]
+        "scripts": [
+            "dependency_check.py",  # Vérification des dépendances
+            "install_modules.sh"    # Installation des modules requis
+        ],
+        "logs": [
+            "installation_log.txt",  # Enregistrement des étapes d'installation
+            "error_log.txt"         # Journal des erreurs d'installation
+        ]
     },
     "programming_states": {
         "prototype": {
             "docs": ["prototype_notes.md"],
-            "src": ["prototype_main.cpp"]
+            "src": ["prototype_main.cpp"],
+            "logs": ["prototype_log.txt"]  # Suivi des modifications en prototype
         },
         "development": {
             "docs": ["dev_notes.md"],
@@ -52,31 +60,38 @@ structure = {
                 "NetworkManager.cpp",
                 "UIManager.cpp"
             ],
-            "tests": ["unit_tests.py", "integration_tests.py"]
+            "tests": ["unit_tests.py", "integration_tests.py"],
+            "logs": ["development_log.txt"]  # Journal des progrès en développement
         },
         "pre_production": {
             "docs": ["pre_prod_notes.md"],
             "src": ["main.cpp", "NetworkManager.cpp", "UIManager.cpp"],
-            "tests": ["qa_tests.py"]
+            "tests": ["qa_tests.py"],
+            "logs": ["pre_production_log.txt"]  # Logs des tests en pré-production
         },
         "production": {
             "docs": ["prod_release_notes.md", "user_manual.pdf"],
-            "deployment_scripts": ["deploy.sh", "backup.sh"]
+            "deployment_scripts": ["deploy.sh", "backup.sh"],
+            "logs": ["production_log.txt"]  # Logs pour l'état de production
         }
     },
     "deployment_states": {
         "unit_tests": {
             "basic_tests": ["test_network.py", "test_ui.py"],
+            "logs": ["unit_tests_log.txt"]  # Journal des erreurs et tests unitaires
         },
         "advanced_tests": {
             "performance_tests": ["stress_test.py", "load_test.py"],
             "security_tests": ["firewall_test.py", "honeypot_test.py"],
+            "logs": ["advanced_tests_log.txt"]  # Journal des tests avancés
         },
         "cloud_deployment": {
             "aws": ["aws_setup.sh"],
-            "gcp": ["gcp_setup.sh"]
+            "gcp": ["gcp_setup.sh"],
+            "logs": ["cloud_deployment_log.txt"]  # Journal du déploiement cloud
         },
-        "local_deployment": ["install_local.sh", "configure_local_env.sh"]
+        "local_deployment": ["install_local.sh", "configure_local_env.sh"],
+        "logs": ["local_deployment_log.txt"]  # Journal du déploiement local
     },
     "functioning": {
         "real_time_monitoring": ["network_status.py", "security_alerts.py"],
@@ -86,11 +101,13 @@ structure = {
     "security": {
         "dmz_config": ["iptables_rules.sh", "vpn_setup.ovpn"],
         "monitoring": ["honeypot_config.py", "fail2ban_config.conf"],
-        "backup_and_recovery": ["backup_db.sh", "recovery_guide.pdf"]
+        "backup_and_recovery": ["backup_db.sh", "recovery_guide.pdf"],
+        "logs": ["security_log.txt"]  # Journal pour les configurations de sécurité
     },
     "uninstallation": {
         "uninstall_scripts": ["remove_all.sh", "uninstall_guide.pdf"],
-        "backup_options": ["backup_logs.sh", "archive_settings.py"]
+        "backup_options": ["backup_logs.sh", "archive_settings.py"],
+        "logs": ["uninstallation_log.txt"]  # Journal pour suivre la désinstallation
     },
     "docs": {
         "installation_guide": ["installation_windows.md", "installation_linux.md"],
