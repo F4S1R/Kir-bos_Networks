@@ -3,7 +3,7 @@ import os
 # Nom du dossier racine pour l’archive complète
 base_dir = "Kirebos_Networks"
 
-# Structure enrichie avec archivage, développement, compilation, UX/UI, versioning
+# Structure complète et validée de l'arborescence pour Kirebos Networks
 structure = {
     "archive": {
         "previous_versions": ["v1.0.zip", "v1.1.zip"]
