@@ -3,7 +3,7 @@ import os
 # Nom du dossier racine pour l’archive complète
 base_dir = "Kirebos_Networks"
 
-# Structure étendue de l'arborescence avec gestion d’erreurs, logs, et prises en charge
+# Structure finale de l'arborescence avec logs, scripts de gestion des erreurs, et déploiement complet
 structure = {
     "archive": {
         "previous_versions": ["v1.0.zip", "v1.1.zip"]
